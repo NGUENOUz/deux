@@ -1,7 +1,32 @@
+*{
+    margin: 0;
+}
+.btn-option{
+    display: none;
+}
+
+body{
+    overflow-x: hidden;
+ }
+ header{
+   
+ }
+ .logo img {
+    width: 100px;
+    height: 100px;
+
+ }
+ 
+
+ .btn-close{
+    display: none;
+ }
 @media(max-width:416px){
     *{
         margin: 0;
+        
     }
+
     header{
         display: block;
         
@@ -58,7 +83,7 @@
         height: 90vh;
         text-align: left;
         transition:ease all 1s;
-        transform: translateY(-100vh);
+        display: none;
        
     
     }
@@ -75,6 +100,7 @@
         background: rgb(110, 105, 105);
     }
     .btn-close{
+        display: block;
         margin-left: 89%;
         max-width: 20px;
         height: 20px;
@@ -117,31 +143,37 @@
         text-align: center;
     }
     .box-article{
-        width: 80%;
-        height: 300px;
-        background: #000;
+        max-width: 300px;
+        height: auto;
+      
+        background: rgb(199, 155, 155);
         margin-left: 10%;
         margin-top: 3%;
+        margin-right: 7%;
         display: block;
     }
 
 
     /* stylisation des articles de l'acceuil */
 
+   .box-article img{
+    max-width :300px;
+    height: 300px; 
+   }
+   .box-article p{
+    font-size: 30px;
+    color: white;
+   }
 
-    .image-article img {
-        max-width:300px;
-        height: 300px;
-       
+   /* stylisation de la section des articles populaires */
 
-    }
-    .Accroche{
-        
-        margin-top: -35%;
-        width: 300px;
-        color:white;
-        font-size: 30px;
-        position: absolute;
-        background: #000;
-    }
+   .Articles-populaire{
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+    background: #000;
+   }
+   .Articles-populaire img {
+    width: 400px;
+   }
 }
